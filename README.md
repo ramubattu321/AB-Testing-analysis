@@ -1,46 +1,98 @@
-# A/B-Test-
-A/B Test Project:
+# A/B Testing Analysis for Marketing Campaign Performance
 
-**Features in the dataset:**
+## Project Overview
 
-1. Campaign Name: The name of the campaign
-2. Date: Date of the record
-3. Spend: Amount spent on the campaign in dollars
-4. #of Impressions: Number of impressions the ad crossed through the campaign
-5. Reach: The number of unique impressions received in the ad
-6. #of Website Clicks: Number of website clicks received through the ads
-7. #of Searches: Number of users who performed searches on the website
-8. #of View Content: Number of users who viewed content and products on the website
-9. #of Add to Cart: Number of users who added products to the cart
-10. #of Purchase: Number of purchases
+This project analyzes the performance of two marketing campaigns using **A/B testing** to determine which campaign performs better in terms of user engagement and conversions.
 
+The analysis compares a **control group** and a **test group** based on several marketing and user behavior metrics such as impressions, clicks, searches, content views, add-to-cart actions, and purchases.
 
-## Data sets
+The goal is to understand which campaign drives higher engagement and leads to more purchases.
 
- - [control_group.csv](https://drive.google.com/file/d/1u3PBDQp4XJUBo8N-O-FWujiLE2nkvwTP/view?usp=sharing)
- - [test_group.csv](https://drive.google.com/file/d/1kqBlD9VPFVXzr8y1uCSgq8glssUnOKod/view?usp=sharing)
+---
 
+## Dataset Features
 
-## Exploratory Data Analysis
+The dataset contains the following variables:
 
-- Importing necessary Libraries
-- Checking NULL Values
-- Filling of NULL values with mean
-- Merging the two Data sets (control_group and test_group)
-- Check whether it have Equal number of samples
+1. **Campaign Name** – Name of the marketing campaign
+2. **Date** – Date of the campaign record
+3. **Spend** – Amount spent on the campaign (USD)
+4. **# of Impressions** – Total number of ad impressions
+5. **Reach** – Number of unique users who saw the ad
+6. **# of Website Clicks** – Number of clicks on the website from ads
+7. **# of Searches** – Number of users who performed searches on the website
+8. **# of View Content** – Number of users who viewed product content
+9. **# of Add to Cart** – Number of users who added products to their cart
+10. **# of Purchase** – Number of purchases made
 
-## A/B test 
+---
 
-- Checking number of impressions in both Campaigns
-- Number of searches performed on website from both Campaigns
-- Number of website clicks on both Campaigns
-- Amount of content viewed from both Campaigns after reaching the website
-- Number of products added to the cart from both Campaigns
-- Amount spent on each Campaigns
-- Purchases made from each Campaigns
-- Website clicks v/s Content viewed
-- Content viewed v/s Number of products added to cart 
-- Number of products added to cart v/s Number of sales
-## Authors
+## Dataset Files
 
-- [@ramubattu321](https://github.com/ramubattu321)
+Control and test campaign datasets used for the analysis:
+
+* **control_group.csv**
+* **test_group.csv**
+
+These datasets represent the two campaign variations used in the A/B testing experiment.
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+The following steps were performed during data exploration:
+
+* Importing required Python libraries
+* Checking for missing (NULL) values
+* Handling missing values using mean imputation
+* Merging control and test datasets
+* Verifying equal sample sizes
+* Preparing the dataset for comparison and analysis
+
+---
+
+## A/B Testing Analysis
+
+The following metrics were analyzed to compare campaign performance:
+
+* Total impressions for each campaign
+* Number of searches performed on the website
+* Website clicks from each campaign
+* Content viewed after website visits
+* Number of products added to cart
+* Total campaign spending
+* Number of purchases generated
+* Relationship between:
+
+  * Website clicks vs content views
+  * Content views vs add-to-cart actions
+  * Add-to-cart actions vs purchases
+
+---
+
+## Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Jupyter Notebook
+
+---
+
+## Project Structure
+
+A-B-Test
+│
+├── control_group.csv
+├── test_group.csv
+├── ab_testing_analysis.ipynb
+└── README.md
+
+---
+
+## Author
+
+Ramu Battu
+Graduate Student – California State University, Fresno
+GitHub: https://github.com/ramubattu321
