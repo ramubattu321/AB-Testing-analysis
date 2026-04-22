@@ -1,9 +1,9 @@
-# A/B Testing Analysis using SQL and Python
+# Marketing Campaign A/B Testing Analysis using SQL and Python
 
 ## Overview
 This project analyzes the performance of two marketing campaigns using **A/B testing** to determine which campaign performs better in terms of user engagement and conversions.
 
-The analysis compares a **control group** and a **test group** across multiple funnel metrics to support data-driven marketing decisions.
+The analysis combines **SQL-based funnel metrics** with **Python-based statistical testing** to support data-driven marketing decisions.
 
 ---
 
@@ -30,18 +30,14 @@ The dataset contains campaign performance metrics including:
 - Add-to-Cart Actions  
 - Purchases  
 
-### Dataset Files
-- `control_group.csv`  
-- `test_group.csv`  
-
 ---
 
 ## Methodology
 
 ### Data Processing
-- Cleaned and merged control and test datasets  
+- Cleaned and prepared the dataset  
 - Handled missing values using mean imputation  
-- Verified consistency and sample sizes  
+- Verified consistency and data quality  
 
 ---
 
@@ -66,7 +62,7 @@ The dataset contains campaign performance metrics including:
   - Click-Through Rate (CTR)  
   - Add-to-Cart Rate  
   - Conversion Rate  
-  - Cost per Purchase  
+  - Revenue per User  
 - Compared control and test group performance at the database level  
 
 ---
@@ -77,14 +73,21 @@ The dataset contains campaign performance metrics including:
 - Add-to-Cart Actions  
 - Purchases  
 - Conversion Rate  
-- Cost Efficiency  
+- Revenue per User  
 
 ---
 
 ## Key Insights
-- Identified differences in user engagement between campaigns  
-- Analyzed conversion behavior across funnel stages  
-- Highlighted which campaign performs better in driving purchases  
+- Observed differences in user engagement between campaigns  
+- Identified variations in conversion behavior across funnel stages  
+- Highlighted performance differences in key marketing metrics  
+
+---
+
+## Final Conclusion
+The analysis indicates that the test campaign performs better than the control group in terms of conversion metrics.
+
+This suggests that the test campaign strategy should be considered for future marketing optimization.
 
 ---
 
@@ -107,19 +110,12 @@ The dataset contains campaign performance metrics including:
 ---
 
 ## Project Structure
-A-B-Test
+AB-Testing-analysis
 │
-├── data/
-│   ├── control_group.csv
-│   ├── test_group.csv
-│
-├── sql/
-│   └── ab_test_queries.sql
-│
-├── notebooks/
-│   └── marketing_campaign_ab_testing_analysis.ipynb
-│
+├── marketing_campaign_ab_testing_analysis.ipynb
+├── ab_test_queries.sql
 ├── README.md
+
 
 ---
 
@@ -127,10 +123,10 @@ A-B-Test
 - Marketing campaign optimization  
 - Conversion rate analysis  
 - Customer behavior analysis  
-- Product feature experimentation  
+- Product experimentation  
 
 ---
 
 ## Author
 Ramu Battu  
-MS Data Analytics – California State University, Fresno  
+MS Data Analytics – California State University, Fresno
