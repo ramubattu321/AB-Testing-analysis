@@ -1,98 +1,136 @@
-# A/B Testing Analysis for Marketing Campaign Performance
+# A/B Testing Analysis using SQL and Python
 
-## Project Overview
-
+## Overview
 This project analyzes the performance of two marketing campaigns using **A/B testing** to determine which campaign performs better in terms of user engagement and conversions.
 
-The analysis compares a **control group** and a **test group** based on several marketing and user behavior metrics such as impressions, clicks, searches, content views, add-to-cart actions, and purchases.
-
-The goal is to understand which campaign drives higher engagement and leads to more purchases.
+The analysis compares a **control group** and a **test group** across multiple funnel metrics to support data-driven marketing decisions.
 
 ---
 
-## Dataset Features
+## Business Problem
+Organizations run A/B tests to evaluate campaign effectiveness. This project aims to:
 
-The dataset contains the following variables:
-
-1. **Campaign Name** – Name of the marketing campaign
-2. **Date** – Date of the campaign record
-3. **Spend** – Amount spent on the campaign (USD)
-4. **# of Impressions** – Total number of ad impressions
-5. **Reach** – Number of unique users who saw the ad
-6. **# of Website Clicks** – Number of clicks on the website from ads
-7. **# of Searches** – Number of users who performed searches on the website
-8. **# of View Content** – Number of users who viewed product content
-9. **# of Add to Cart** – Number of users who added products to their cart
-10. **# of Purchase** – Number of purchases made
+- Identify which campaign generates higher engagement  
+- Compare conversion performance across user actions  
+- Support decision-making for marketing optimization  
 
 ---
 
-## Dataset Files
+## Dataset
+The dataset contains campaign performance metrics including:
 
-Control and test campaign datasets used for the analysis:
+- Campaign Name  
+- Date  
+- Spend (USD)  
+- Impressions  
+- Reach  
+- Website Clicks  
+- Searches  
+- Content Views  
+- Add-to-Cart Actions  
+- Purchases  
 
-* **control_group.csv**
-* **test_group.csv**
-
-These datasets represent the two campaign variations used in the A/B testing experiment.
-
----
-
-## Exploratory Data Analysis (EDA)
-
-The following steps were performed during data exploration:
-
-* Importing required Python libraries
-* Checking for missing (NULL) values
-* Handling missing values using mean imputation
-* Merging control and test datasets
-* Verifying equal sample sizes
-* Preparing the dataset for comparison and analysis
+### Dataset Files
+- `control_group.csv`  
+- `test_group.csv`  
 
 ---
 
-## A/B Testing Analysis
+## Methodology
 
-The following metrics were analyzed to compare campaign performance:
+### Data Processing
+- Cleaned and merged control and test datasets  
+- Handled missing values using mean imputation  
+- Verified consistency and sample sizes  
 
-* Total impressions for each campaign
-* Number of searches performed on the website
-* Website clicks from each campaign
-* Content viewed after website visits
-* Number of products added to cart
-* Total campaign spending
-* Number of purchases generated
-* Relationship between:
+---
 
-  * Website clicks vs content views
-  * Content views vs add-to-cart actions
-  * Add-to-cart actions vs purchases
+### Exploratory Data Analysis (EDA)
+- Analyzed user behavior across funnel stages  
+- Compared engagement metrics between campaigns  
+- Identified relationships between user actions  
+
+---
+
+### Statistical Testing
+- Conducted hypothesis testing to compare campaign performance  
+- Null Hypothesis (H₀): No difference between campaigns  
+- Alternative Hypothesis (H₁): Test campaign performs better  
+- Evaluated results using statistical significance (p-value approach, α = 0.05)  
+
+---
+
+### SQL Analysis
+- Performed funnel analysis using SQL queries  
+- Calculated key metrics such as:
+  - Click-Through Rate (CTR)  
+  - Add-to-Cart Rate  
+  - Conversion Rate  
+  - Cost per Purchase  
+- Compared control and test group performance at the database level  
+
+---
+
+## Key Metrics
+- Impressions  
+- Website Clicks  
+- Add-to-Cart Actions  
+- Purchases  
+- Conversion Rate  
+- Cost Efficiency  
+
+---
+
+## Key Insights
+- Identified differences in user engagement between campaigns  
+- Analyzed conversion behavior across funnel stages  
+- Highlighted which campaign performs better in driving purchases  
+
+---
+
+## Business Impact
+- Supports data-driven marketing decisions  
+- Helps optimize campaign performance and budget allocation  
+- Reduces risk of ineffective marketing strategies  
+- Improves conversion and revenue outcomes  
 
 ---
 
 ## Tools & Technologies
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Jupyter Notebook
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- SQL  
+- Jupyter Notebook  
 
 ---
 
 ## Project Structure
-
 A-B-Test
 │
-├── control_group.csv
-├── test_group.csv
-├── ab_testing_analysis.ipynb
-└── README.md
+├── data/
+│   ├── control_group.csv
+│   ├── test_group.csv
+│
+├── sql/
+│   └── ab_test_queries.sql
+│
+├── notebooks/
+│   └── marketing_campaign_ab_testing_analysis.ipynb
+│
+├── README.md
+
+---
+
+## Applications
+- Marketing campaign optimization  
+- Conversion rate analysis  
+- Customer behavior analysis  
+- Product feature experimentation  
 
 ---
 
 ## Author
-
-Ramu Battu
-Graduate Student – California State University, Fresno
-GitHub: https://github.com/ramubattu321
+Ramu Battu  
+MS Data Analytics – California State University, Fresno  
